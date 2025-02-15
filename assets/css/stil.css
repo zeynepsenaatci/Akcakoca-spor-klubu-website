@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: center;
+}
+.menu ul li{
+    list-style-type: none;
+    float: left;
+    line-height: 105px;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0 30px;
+    display: block;
+
+}
+.menu ul li a:hover{
+    background-color: #f3aa0e;
+    color: #333;
+}
+.header img{
+    padding-right: 50px;
+}
+.icon{
+    color: white;
+    line-height: 100px;
+    padding-right: 20px;
+}
+.hamburgericon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+.menu{
+    border-bottom: #f3aa0e solid 4px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content>div{
+    width: 30%;
+    padding: 20px 10px;
+    text-align: center;
+}
+.service img{
+    height: 200px;
+    border-radius: 50%;
+}
+.baslik{
+    text-align: center;
+    margin: 50px 0;
+}
+.bggray{
+    background-color: #333;
+}
+.kareresim{
+    border-radius: 0px !important;
+}
+.ekibimiz{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.personel{
+    width: 25%;
+}
+.personel img{
+    width: 100%;
+}
+.personel p{
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    line-height: 20px;
+}
+.personel>div{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.personel hr{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.personel>div>i{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer{
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+.footer>div{
+    padding: 20px;
+    width: 30%;
+}
+.footer>div>p{
+    padding: 10px 0px;
+}
+.sagayasla{
+    text-align: center;
+}
+/* Responsive */
+
+@media screen and (max-width:768px) {
+    .footer{
+        flex-direction: column;
+    }
+    .footer>div{
+        width: 100%;
+    }
+    .menu ul li{display: none;}
+    .hamburgericon{display: block;}
+    .menu.responsive ul li{
+        display: block;
+        float: none;
+        line-height: 40px;
+    }
+    .header{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content>div{width: 100%;}
+    .ekibimiz{
+        flex-direction: column;
+    }
+    .personel{
+        width: 100%;
+    }
+}
